@@ -20,31 +20,29 @@
 
   <section class="ls">
    
-      <section class="t">
 
        <h1>Bill</h1>
-      <input type="number" name="bill" id="bill">
 
-      </section>
+      <input type="number" onkeyup="ytotal()" name="bill" id="bill">
 
       <section class="c">
 
      <h1>  Select Tip % </h1>
 
      <section class="btns">
-            <button class="nb" id="b5"> 5%</button> 
-            <button class="nb" id="b10" > 10%</button> 
-            <button class="nb" id="b15"> 15%</button> 
-            <button class="nb" id="b25"> 25%</button> 
-            <button class="nb" id="b50"> 50%</button> 
-            <input class="nb" id="custom" placeholder="Custom  " type="number"></input> 
+            <button class="nb" onclick="tips()" id="5"> 5%</button> 
+            <button class="nb" onclick="tips()" id="10"> 10%</button> 
+            <button class="nb" onclick="tips()" id="v15"> 15%</button> 
+            <button class="nb" onclick="tips()" id="25"> 25%</button> 
+            <button class="nb" onclick="tips()" id="50"> 50%</button> 
+            <input class="nb"  onkeyup="ytap()" id="custom" placeholder="Custom  " type="number"></input> 
      </section>
 
       </section>
 
       <section class="b">
         <h1> Number of People</h1>
-        <input type="number" name="peo" id="peo">
+        <input type="number" onkeyup="ytotal()" name="peo"  value="1" id="peo">
       </section>
 
   </section>
@@ -61,7 +59,7 @@
 
       <span>/ person</span></h2>
  
-      <h3>0.00</h3>
+      <h3 id="tap">$ 0.00</h3>
 
    </section>
 
@@ -73,13 +71,13 @@
 
      <span>/ person</span></h2>
 
-    <h3>0.00</h3>
+    <h3 id="total" >$ 0.00</h3>
 
   </section>
 
 <!--  reset section-->
 
-    <button id="res">Reset</button>
+    <button id="res" onclick="rest()">Reset</button>
 
   </section>
 

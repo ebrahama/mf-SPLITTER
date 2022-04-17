@@ -26,18 +26,23 @@ body{
 input{
     font-size: 24px;
     color: var(--Very-dark-cyan);
-    background: var(--Very-light-grayish-cyan);
+    background: var(--Light-grayish-cyan);
     border: 1px solid var(--Dark-grayish-cyan);
     position: relative;
     left: 5%;
     text-align: right;
     border-radius: 4px;
+    border-color: var(--Dark-grayish-cyan);
+}
+input:focus{
+    border-color: var(--Strong-cyan);
+
 }
 #bill{
-    background: url("./images/icon-dollar.svg")no-repeat;
+    background: url("./images/icon-dollar.svg") no-repeat;
 }
 #peo{
-    background: url("./images/icon-person.svg")no-repeat;
+    background: url("./images/icon-person.svg") no-repeat;
 }
 .cc{
     text-align: center;
@@ -75,6 +80,7 @@ h1 , h2{
     padding-bottom: 15px;
 }
 
+
 .nb{
     background: var(--Very-dark-cyan);
     color: var(--Very-light-grayish-cyan) ;
@@ -86,9 +92,16 @@ h1 , h2{
     left: 5%;
 }
 .nb:hover{
-  background:var(--Strong-cyan);
+  background:hsl(172, 37%, 56%);
   color: var(--Very-dark-cyan);
   cursor: pointer;
+
+}
+#v15{
+    background:var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    cursor: pointer;
+
 }
 
 #custom{
