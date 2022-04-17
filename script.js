@@ -5,6 +5,7 @@ const v10 = document.getElementById("10")
 const v15 = document.getElementById("v15")
 const v25 = document.getElementById("25")
 const v50 = document.getElementById("50")
+
 const cus = document.getElementById("custom")
 
 
@@ -22,20 +23,25 @@ v15.value = 0.15
 v25.value = 0.25
 v50.value = 0.50
 
+function cusi(){
+
+   let result = (cus.value / 100)
+
+   return result
+}
 
 //fuction for tip amount pperson
 
 function ytap() {
- 
-    
    
-    let result = (  v15.value * +bill.value) / +nop.value
+    let result = (  cusi() * +bill.value) / +nop.value
 
     tap.innerText = "$" + " " + result.toFixed(2)
 
      return result 
     
 }
+
 
 //fuction for the total pperson
 
@@ -48,7 +54,7 @@ function ytotal() {
     return result
 
     }
-
+  
 
 
 //fuction for the rest btn
@@ -57,7 +63,7 @@ function rest(){
      
     bill.value = ""
     nop.value = "1"
-
+    cus.value = ""
     tap.innerText = "$ 0.00"
     total.innerText = "$ 0.00"
 }

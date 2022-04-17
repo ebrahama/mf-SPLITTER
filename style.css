@@ -54,7 +54,7 @@ input:focus{
     background: var(--White);
     border-radius: 20px;
     padding: 5px 20px;
-    width: 100%;
+    width: 100vw;
     max-width: 400px;
     position: relative;
     margin: 10% auto;
